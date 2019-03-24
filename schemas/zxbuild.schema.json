@@ -1,0 +1,76 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"type": "object",
+	"oneOf": [
+		{
+			"properties": {
+				"type": {
+					"const": "Application"
+				},
+				"builds": {
+					"type": "object",
+					"additionalProperties": {
+						"oneOf": [
+							{
+								"type": "object",
+								"properties": {
+									"builder": {
+										"const": "electron"
+									},
+									"platform": {
+										"type": "string"
+									},
+									"arch": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"builder",
+									"platform",
+									"arch"
+								],
+								"additionalProperties": false
+							},
+							{
+								"type": "object",
+								"properties": {
+									"builder": {
+										"const": "webapp"
+									}
+								},
+								"required": [
+									"builder"
+								],
+								"additionalProperties": false
+							}
+						]
+					}
+				}
+			},
+			"required": [
+				"type",
+				"builds"
+			]
+		},
+		{
+			"properties": {
+				"type": {
+					"const": "Library"
+				}
+			},
+			"required": [
+				"type"
+			]
+		},
+		{
+			"properties": {
+				"type": {
+					"const": "Service"
+				}
+			},
+			"required": [
+				"type"
+			]
+		}
+	]
+}

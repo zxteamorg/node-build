@@ -1,0 +1,10 @@
+{
+	"type": "electron",
+	"paths": {
+		"dist": ".dist",
+		"src": "src.main",
+		"test": "test",
+		"types": "types"
+	}
+	
+}
