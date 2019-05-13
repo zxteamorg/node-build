@@ -1,6 +1,6 @@
 {
 	"name": "@zxnode/build",
-	"version": "0.0.33",
+	"version": "0.0.34",
 	"description": "ZXTeam's NodeJS Reusable Library for Build Automation",
 	"main": "./src/index.js",
 	"types": "./src/index.d.ts",
@@ -30,17 +30,17 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-tar": "^2.1.0",
 		"gulp-tslint": "^8.1.4",
-		"gulp-typescript": "^4.0.2",
+		"gulp-typescript": "^5.0.1",
 		"gulp-util": "^3.0.8",
 		"merge2": "^1.2.3",
-		"mocha": "^6.0.2",
-		"nyc": "^13.3.0",
+		"mocha": "^6.1.4",
+		"nyc": "^14.1.1",
 		"plugin-error": "^1.0.1",
 		"pretty-hrtime": "^1.0.3",
 		"run-sequence": "^2.2.1",
-		"source-map-support": "^0.5.11",
-		"tslint": "^5.15.0",
-		"typescript": "^3.4.1"
+		"source-map-support": "^0.5.12",
+		"tslint": "^5.16.0",
+		"typescript": "^3.4.5"
 	},
 	"keywords": [
 		"zxteam",
